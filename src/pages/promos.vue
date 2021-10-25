@@ -72,19 +72,12 @@ Are you a group of 20? Get 10% off when you purchase your tickets onsite, Seven 
     </Layout>
 </template>
 
-<script>
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-  export default {
-      mounted() {
-          AOS.init()
-      },
-  }
-</script>
+
+
 
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
 .v-parallax__image{
 filter: brightness(70%);

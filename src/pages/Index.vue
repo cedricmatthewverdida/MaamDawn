@@ -89,17 +89,12 @@ pirate-themed waterpark in the Philippines. Established in November 2017, the wa
 </template>
 
 <script>
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Rates from '~/components/rates.vue'
 import Book from '~/components/book.vue'
 export default {
   components:{
     Rates,
     Book
-  },
-  mounted() {
-    AOS.init();
   },
 }
 </script>

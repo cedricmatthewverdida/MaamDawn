@@ -51,8 +51,7 @@
 
 
 <script>
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
   export default {
     data: () => ({
       rates:[
@@ -83,9 +82,6 @@ import 'aos/dist/aos.css';
       ],
       transparent: 'rgba(255, 255, 255, 0)',
     }),
-    mounted() {
-      AOS.init()
-    },
   }
 </script>
 
