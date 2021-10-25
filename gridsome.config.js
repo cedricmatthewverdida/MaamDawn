@@ -6,5 +6,7 @@
 
 module.exports = {
   siteName: 'ITE 308',
+  siteUrl: 'https://cedricmatthewverdida.github.io',
+  pathPrefix: '/MaamDawn',
   plugins: []
 }
