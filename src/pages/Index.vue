@@ -39,6 +39,7 @@
   <v-card
   class="modified"
   dark
+  tile
   >
 
     <v-card-text>
@@ -52,6 +53,7 @@
   <v-card
   class="modified"
   dark
+  tile
   >
 
   <v-card-text >

@@ -4,6 +4,7 @@
   <v-card
   class="modified"
   dark
+  tile
   >
   <v-card-text class="container">
   <v-row>

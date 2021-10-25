@@ -1,6 +1,7 @@
 <template>
     <Layout>
         <v-card
+        tile
         dark
         class="modified">
             <v-card-text class="container">
@@ -15,6 +16,7 @@
         
         <v-card
         dark
+        tile
         class="modified pa-5"
         >
             <v-card-text class="container">

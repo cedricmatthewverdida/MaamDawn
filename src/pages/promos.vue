@@ -3,6 +3,7 @@
         <v-card
         dark
         class="modified"
+        tile
         >
         
             <v-card class="container" shaped>
