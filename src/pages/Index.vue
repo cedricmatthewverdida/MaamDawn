@@ -22,14 +22,7 @@
               Evelyn Water Park
             </h1>
 
-            <v-btn
-            outlined
-            large
-            rounded
-            color="white"
-            >
-              Book Now
-            </v-btn>
+            <Book/>
 
           </v-col>
         </v-row>
@@ -58,7 +51,9 @@
 
   <v-card-text >
     <v-row class="mt-5">
-      <v-col>
+      <v-col
+      data-aos="fade-up-right"
+      >
         <h1 class="text-center mt-5" style="font-family: 'Exo';font-size: 50px;">About Us</h1>
         <h3 class="text-center mt-5">Seas the adventure & make unforgettable memories!</h3>
         <p class="text-center pa-5">
@@ -76,7 +71,9 @@ pirate-themed waterpark in the Philippines. Established in November 2017, the wa
         </v-btn>
         </p>
       </v-col>
-      <v-col>
+      <v-col
+      data-aos="fade-left"
+      >
         <v-img 
         style="border-radius: 40%;"
         height="500"
@@ -92,11 +89,18 @@ pirate-themed waterpark in the Philippines. Established in November 2017, the wa
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Rates from '~/components/rates.vue'
+import Book from '~/components/book.vue'
 export default {
   components:{
-    Rates
-  }
+    Rates,
+    Book
+  },
+  mounted() {
+    AOS.init();
+  },
 }
 </script>
 

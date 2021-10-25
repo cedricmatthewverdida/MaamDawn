@@ -2,21 +2,27 @@
     <Layout>
         <v-card
         dark
-        class="modified"
+        class="modified pa-5"
         tile
+
         >
         
-            <v-card class="container" shaped>
+            <v-card class="container modified"
+            shaped>
                 <v-card-text>
                     <v-row>
-                        <v-col>
+                        <v-col
+                        data-aos="flip-left"
+                        >
                             <v-img 
                             style="border-radius: 40%;"
                             height="500"
                             width="700"
                             src="https://wallpaperaccess.com/full/2492037.jpg"/>
                         </v-col>
-                            <v-col>
+                            <v-col
+                            data-aos="flip-right"
+                            >
                                 <h1 class="text-center mt-15" style="font-family: 'Exo';font-size: 50px;">Summer Splash</h1>
                                 <h3 class="text-center mt-5">
                                     P499
@@ -31,11 +37,13 @@
                 </v-card-text>
             </v-card>
 
-            <v-card class="container" shaped>
+            <v-card class="container mt-2 modified" shaped>
             <v-card-text>
                 <v-row>
                     
-                    <v-col>
+                    <v-col
+                    data-aos="flip-left"
+                    >
                         <h1 class="text-center mt-15" style="font-family: 'Exo';font-size: 50px;">Group Discount</h1>
                         <h3 class="text-center mt-5">
                         P499
@@ -47,7 +55,9 @@ Are you a group of 20? Get 10% off when you purchase your tickets onsite, Seven 
                         </p>
                             
                     </v-col>
-                    <v-col>
+                    <v-col
+                    data-aos="flip-right"
+                    >
                         <v-img 
                         style="border-radius: 40%;"
                         height="500"
@@ -63,7 +73,12 @@ Are you a group of 20? Get 10% off when you purchase your tickets onsite, Seven 
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
   export default {
+      mounted() {
+          AOS.init()
+      },
   }
 </script>
 

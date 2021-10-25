@@ -9,6 +9,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "gh-pages": "^3.2.3",
     "gridsome": "^0.7.0",
     "vuetify": "^2.5.10"

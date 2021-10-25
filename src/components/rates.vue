@@ -1,15 +1,14 @@
 <template>
   <v-container class="pa-4 text-center">
     <v-row
-      class="fill-height"
-      align="center"
-      justify="center"
+     
     >
       <template v-for="(item, i) in rates">
         <v-col
           :key="i"
           cols="12"
-          md="5"
+          md="6"
+          data-aos="fade-up"
         >
           <v-hover v-slot="{ hover }">
             <v-card
@@ -52,6 +51,8 @@
 
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
   export default {
     data: () => ({
       rates:[
@@ -82,6 +83,9 @@
       ],
       transparent: 'rgba(255, 255, 255, 0)',
     }),
+    mounted() {
+      AOS.init()
+    },
   }
 </script>
 
